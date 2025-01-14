@@ -35,6 +35,13 @@ The activity lifecycle consists of the following methods:
    - Called before the activity is destroyed.
    - Use this method to release resources and clean up tasks.
   
+### Activity lifecycle
+
+- App Launch → onCreate, onStart, onResume
+- App Minimize → `onPause`, `onStop` | App Restore → `onRestart`, `onStrat`, `onResume`
+- Open Another Activity → `onPause`, `onStop` | Back → `onRestart`, `onStart`, `onResume`
+- App Orientation Change → `onPause`, `onStop`, `onDestroy`, `onCraete`, `onStart`, `onResume`
+  
 ## Lifecycle Diagram
 
 ![Android Lifecycle Diagram](https://developer.android.com/guide/components/images/activity_lifecycle.png)
