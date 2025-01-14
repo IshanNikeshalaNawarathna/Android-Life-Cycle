@@ -37,7 +37,7 @@ The activity lifecycle consists of the following methods:
   
 ### Activity lifecycle
 
-- App Launch → onCreate, onStart, onResume
+- App Launch → `onCreate`, `onStart`, `onResume`
 - App Minimize → `onPause`, `onStop` | App Restore → `onRestart`, `onStrat`, `onResume`
 - Open Another Activity → `onPause`, `onStop` | Back → `onRestart`, `onStart`, `onResume`
 - App Orientation Change → `onPause`, `onStop`, `onDestroy`, `onCraete`, `onStart`, `onResume`
